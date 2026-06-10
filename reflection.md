@@ -34,17 +34,29 @@ Document at least 3 bugs you found. Add rows as needed.
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
   claude code
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+The issue: The logic is inverted:
+
+When guess > secret (your guess is too high), it should say "Go LOWER" but it says "Go HIGHER"
+When guess < secret (your guess is too low), it should say "Go HIGHER" but it says "Go LOWER"
+The fix: Swap the messages
   
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+I did not encounter a wrong suggestion from the AI in either of my fixes.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+I first asked the AI assistant to generate a pytest case as per the instructions and ran it in the terminal, when that worked, I run the app and tried it in the browser to verify that the issue was fixed.
+
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  for my 1st fix: I simply run the the app and in the game in the browser, the attempts left was correct to 8 (for normal), on playing the game, I entered all the incorrect numbers to ensure the correct number of attempts were allowed.
+  for my 2nd fix: again in the browser, on entering the incorrect number, I was getting the correct hint from the game.
+
 - Did AI help you design or understand any tests? How?
+yes, AI helped me design the pytest case I could run in the terminal and instructed me on how to un it too.
 
 ---
 
