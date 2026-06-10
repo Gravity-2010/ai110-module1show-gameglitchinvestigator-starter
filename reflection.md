@@ -7,6 +7,14 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+  1. When I first started the game, it showed attempts left 7 (there should be 8 attempts to start with as mentioned in the game instructions), although when I start a new game, it correctly shows, attempts left = 8.
+  Same for other levels, the attemt number to start with is 1 less.
+
+  2. Yes, the hints are backwards, when I need to go lower, it says ho higher, and when I need to go higher, the hint is go lower.
+
+  3. New game button doesn't work once you win the game.
+
+  4. In game setting, easy has a range from 1 - 20, but the game still has a range from 1 - 100, mismatch in instructions and the actual game.
 
 **Bug Reproduction Log**
 
@@ -14,16 +22,19 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Difficulty level hard| attempts left: 5| attempts left: 4
+| 60 | hint: go higher| hint: go lower|
+| New game (after winning the game) | should start a new game | doesn't start a new game| You already won. Start a new game to play again.
+| Difficulty: hard| Guess a number between 1 and 50 | Guess a number between 1 and 100
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  claude code
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
 ---
