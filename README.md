@@ -25,19 +25,19 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] To guess a number in given number of attempts
+- [ ] Mentioned in reflection.md
+- [ ] Mentioned in reflection.md
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User selects a difficulty level
+2. User enters a guess number
+3. If hint is on, game returns a hint if the guess is incorrect
+4. Based on that hint and logic, user enters another guess
+5. Keep doing this until you get to the correct guess or there are no more attampts left
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
